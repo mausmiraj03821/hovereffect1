@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.maindiv {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.24);
+}
+
+
+/* .maindiv1 {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgba(128, 128, 128, 0.24);
+} */
+
+.div1 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    color: rgb(0, 183, 255);
+    overflow: hidden;
+}
+
+.div1::before {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: yellow;
+    transform: translate3d(30deg);
+    top: -50px;
+    transition: 2s;
+}
+
+
+/* .div1::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: none;
+    border-left: 2px solid blue;
+    transform: translate3d(30deg);
+    right: 0px;
+    top: 0;
+    transition: 2s;
+} */
+
+.div1:hover::before {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    top: 0px;
+    transform: transform3d(120deg);
+    background-color: green;
+    color: black;
+}
+
+
+/* .div1:hover::after {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    right: 0px;
+    top: 100px;
+    transform: transform3d(120deg);
+    background: none;
+    border-left: 2px solid pink;
+}
+
+.maindiv1 .div2 {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: px;
+}
+
+.div2::before {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: none;
+    border-top: 2px solid greenyellow;
+    transform: translate3d(30deg);
+    right: 0px;
+    top: 0;
+    transition: 2s;
+}
+
+.div2::after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: none;
+    border-left: 2px solid blue;
+    transform: translate3d(30deg);
+    left: 0px;
+    top: 0;
+    transition: 2s;
+}
+
+.div2:hover::before {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    right: 100px;
+    top: 0;
+    transform: transform3d(120deg);
+    background: none;
+    border-top: 2px solid green;
+}
+
+.div2:hover::after {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    left: 0px;
+    top: 100px;
+    transform: transform3d(120deg);
+    background: none;
+    border-left: 2px solid pink;
+} */
